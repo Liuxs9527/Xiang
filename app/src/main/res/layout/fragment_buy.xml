@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccffff"
+    android:id="@+id/buy_fragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/sy_bk">
+
+        <TextView
+            android:id="@+id/all_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:drawableTop="@mipmap/common_icon_all"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="全部订单" />
+
+        <TextView
+            android:id="@+id/wait_for_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:drawableTop="@mipmap/common_icon_pay"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+
+            android:layout_weight="1"
+            android:text="待付款" />
+
+        <TextView
+            android:id="@+id/wait_for_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:drawableTop="@mipmap/common_icon_receive"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="待收货" />
+
+        <TextView
+            android:id="@+id/wait_for_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/commom_icon_comment"
+            android:text="待评价" />
+
+        <TextView
+            android:id="@+id/completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:gravity="center"
+            android:drawableTop="@mipmap/common_icon_finish"
+            android:drawablePadding="10dp"
+            android:layout_weight="1"
+            android:text="已完成" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_order_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

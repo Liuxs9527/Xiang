@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ZhuceActivity"
+    android:background="@mipmap/zhuye_background"
+    >
+
+
+    <LinearLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="36dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/login_icon_phone"
+            android:layout_marginRight="20dp"
+            />
+
+        <EditText
+            android:id="@+id/zc_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:textSize="18sp"
+            android:textColorHint="#ffffff"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="36dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/dun"
+            android:layout_marginRight="20dp"
+            />
+
+        <EditText
+            android:id="@+id/zc_security"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:textSize="18sp"
+            android:textColorHint="#ffffff"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="36dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/login_icon_lock"
+            android:layout_marginRight="20dp"
+            />
+
+        <EditText
+            android:id="@+id/zc_password"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:textSize="18sp"
+            android:textColorHint="#ffffff"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            />
+        <ImageView
+            android:id="@+id/zc_seepassword"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/login_icon_eye"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginRight="36dp">
+
+        <TextView
+            android:id="@+id/go_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有账户?点击登录"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/zc_button"
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/checkbox"
+        android:text="注册"
+        android:textColor="#f00"
+        android:layout_marginTop="@dimen/dp_80"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/dp_20"
+
+        />
+
+
+</LinearLayout>

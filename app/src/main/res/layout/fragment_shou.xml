@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+        <ImageView
+            android:id="@+id/sy_menu"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/leixing"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/edit"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/sy_bk"
+            android:drawableLeft="@mipmap/search"
+            android:hint="请输入商品类型"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/sy_sousuo"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/search"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <com.stx.xhb.xbanner.XBanner
+                    android:id="@+id/xbanner"
+                    android:layout_width="@dimen/dp_350"
+                    android:layout_height="@dimen/dp_200"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_10"
+                    app:isClipChildrenMode="true"></com.stx.xhb.xbanner.XBanner>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_rxxp_syf"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="热销新品"
+                    android:textColor="#FF7F40"
+                    android:textSize="@dimen/dp_17"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/rxmore"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/common_btn_more_yellow"
+                    android:padding="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rxxprecycleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#fff"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_mlss_syf"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="魔力时尚"
+                    android:textColor="#9379DB"
+                    android:textSize="@dimen/dp_17"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/mlmore"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/home_btn_more_purple"
+                    android:padding="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mlssrecycleView"
+                android:layout_width="@dimen/dp_350"
+                android:layout_gravity="center_horizontal"
+                android:background="#fff"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_pzsh_syf"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="品质生活"
+                    android:textColor="#FF6EC7"
+                    android:textSize="@dimen/dp_17"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/pzmore"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/home_btn_moer_pink"
+                    android:padding="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pzshRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"></android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/morelinear">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/common_nav_btn_back"
+
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/moreRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

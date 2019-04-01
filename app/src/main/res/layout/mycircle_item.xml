@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_400"
+    android:background="@drawable/qz_bg"
+    android:orientation="vertical"
+    android:id="@+id/mycircle"
+    android:padding="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/mycircle_user_txpicture"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            />
+        <TextView
+            android:id="@+id/mycircle_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:text="11111"
+            android:gravity="left"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/mycircle_user_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:text="1111"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/mycircle_user_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1111111111111"/>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/mycircle_user_picture"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="@dimen/dp_250"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/del_my_circle"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/common_btn_delete"
+            android:padding="@dimen/dp_5"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
